@@ -1,10 +1,12 @@
-def palidromeStr(text):
-    start, end = 0, len(text)-1
-    while start< end:
-        text[start], text[end] = text[end] ,text[start]
-        start += 1
-        end -= 1
-  
-text= "My school is AkiraChix"     
-palidromeStr(str)
-print(str)
+def word(a):
+  y=a.split()
+  start=0
+  end=len(y)-1
+  while start<end:
+    y[start],y[end]=y[end],y[start]
+    start+=1
+    end-=1
+    b=' '
+  print(b.join(y))
+word("I study at AkiraChix")  
+p="AkiraChix at study I"
